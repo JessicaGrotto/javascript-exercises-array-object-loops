@@ -7,34 +7,33 @@ const numbers = [1,2,3,4,5]
 // La función multiplyByTwo tiene que devolver un array con los números multiplicados por 2 de cada elemento del array `numbers`
 function multiplyByTwo(numbers) {
   // Aquí va tu código
-  let multiplicados = []
+  let multiplyByTwo = []
   for(i=0; i<numbers.length; i++) {
-    multiplicados[i] = numbers[i]*2
+    multiplyByTwo[i] = numbers[i]*2
   }
-  return multiplicados;
+  return multiplyByTwo;
 }
-
 
 // La función evenNumbers tiene que devolver los números pares del array `numbers`
 function evenNumbers(numbers) {
   // Aquí va tu código
-  let numPares = []
+  let evenNumbers = []
   for(i=0; i<numbers.length; i++){
     if(numbers[i]%2==0){
-      numPares[numPares.length] = numbers[i]
+      evenNumbers[evenNumbers.length] = numbers[i]
     }
   }
-  return numPares;
+  return evenNumbers;
 }
 
 // La función numbersBackwards tiene que devolver los números del array `numbers` en orden inverso
 function numbersBackwards(numbers) {
   // Aquí va tu código
-  const inversNumbers = []
-  for(i=numbers.length; i>numbers.length; i--){
-    inversNumbers[i] = numbers[i]
+  let numbersBackwards = []
+  for(i=numbers.length; i>=0; i--){
+    numbersBackwards[] = numbers[i]
   }
-  return inversNumbers;
+  return numbersBackwards;
 }
 
 // La función `sum` tiene que devolver la suma de todos los números del array `numbers`
@@ -48,14 +47,14 @@ return suma
 }
 
 // La función `average` tiene que devolver el promedio de todos los números del array `numbers`
-function average(numbers) {
+/*function average(numbers) {
   // Aquí va tu código
   let promedio = 0
   for(i=0; i<numbers.length; ){
     promedio = promedio + numbers[i]
   }
   return promedio / promedio.length;
-}
+}*/
 
 // La función `biggestPrime` tiene que devolver el número primo más grande de los primeros 100 números
 // El parámetro numbers es el número 100
