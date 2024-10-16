@@ -31,7 +31,7 @@ function numbersBackwards(numbers) {
   // Aquí va tu código
   let numbersBackwards = []
   for(i=numbers.length; i>=0; i--){
-    numbersBackwards[] = numbers[i]
+    numbersBackwards[numbersBackwards.length] = numbers[i]
   }
   return numbersBackwards;
 }
@@ -39,27 +39,40 @@ function numbersBackwards(numbers) {
 // La función `sum` tiene que devolver la suma de todos los números del array `numbers`
 function sum(numbers) {
    //Aquí va tu código
-  let suma = 0
+  let sum = 0
   for(i=0; i<numbers.length; i++){
-  suma = suma + numbers[i]
+  sum = sum + numbers[i]
   }
-return suma
+return sum
 }
 
 // La función `average` tiene que devolver el promedio de todos los números del array `numbers`
-/*function average(numbers) {
+function average(numbers) {
   // Aquí va tu código
-  let promedio = 0
+  let average = 0
   for(i=0; i<numbers.length; ){
-    promedio = promedio + numbers[i]
+    average = average + numbers[i]
   }
-  return promedio / promedio.length;
-}*/
+  return average / average.length;
+}
 
 // La función `biggestPrime` tiene que devolver el número primo más grande de los primeros 100 números
 // El parámetro numbers es el número 100
 function biggestPrime(numbers) {
   // Aquí va tu código
+  let biggestPrime = 0
+  for (i=numbers[numbers.length-1]; i>=2; i--){
+    for(j=2; j<i; j++){
+      if(i%j===0){
+       let isPrime = false
+      } else {
+        isPrime = true}
+    }
+    if(isPrime = true){
+      biggestPrime = i
+    }
+  }
+  return biggestPrime
 }
 
 // Crea una variable person y asígnale un objeto vacío
